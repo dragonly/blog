@@ -3,6 +3,15 @@ export default ({ children, ...props }) => (
     {children}
     <script dangerouslySetInnerHTML={{ __html: `
       // add your google analytics code here
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42771171-4"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-42771171-4');
+      </script>
     `}} />
     <style jsx>{`
       div {

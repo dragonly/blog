@@ -4,9 +4,9 @@ const path = require('path')
 
 function generate() {
   const feed = new RSS({
-    title: 'My Blog',
-    site_url: 'https://myblog.com',
-    feed_url: 'https://myblog.com/feed.xml'
+    title: '李逸龙的 Blog',
+    site_url: 'https://elon.fun/',
+    feed_url: 'https://elon.fun//feed.xml'
   })
 
   const content = []
