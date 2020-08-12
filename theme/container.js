@@ -1,17 +1,14 @@
-export default ({ children, ...props }) => (
+const _container = ({ children, ...props }) => (
   <div {...props}>
     {children}
-    <script dangerouslySetInnerHTML={{ __html: `
+    <script dangerouslySetInnerHTML={{
+      __html: `
       // add your google analytics code here
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42771171-4"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        gtag('config', 'UA-42771171-4');
-      </script>
+      gtag('config', 'UA-42771171-4');
     `}} />
     <style jsx>{`
       div {
@@ -49,3 +46,5 @@ export default ({ children, ...props }) => (
     `}</style>
   </div>
 )
+
+export default _container

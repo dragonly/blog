@@ -2,14 +2,14 @@ import Link from 'next/link'
 
 import colors from './color'
 
-const A = ({ children, href, prefetch, ...props }) => {
+const A = ({ children, href, ...props }) => {
   let external = false
 
   if (href && /^(https?:\/\/|\/\/)/.test(href)) {
     external = true
   }
 
-  return  <Link href={href} prefetch={prefetch}>
+  return  <Link href={href}>
     <a target={external ? '_blank' : null} {...props}>
       {children}
       <style jsx>{`
