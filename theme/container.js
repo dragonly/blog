@@ -14,7 +14,7 @@ const _container = ({ children, ...props }) => (
       div {
         margin: auto;
         padding: 4rem 1rem 0;
-        max-width: 38rem;
+        max-width: 48rem;
       }
 
       :global(body) {

@@ -19,8 +19,11 @@
     "react-dom": "^16.8.3"
   },
   "dependencies": {
+    "@mdx-js/react": "^1.6.16",
     "@mdx-js/tag": "^0.15.0",
     "lightense-images": "^1.0.8",
+    "prism-react-renderer": "^1.1.1",
+    "react-live": "^2.2.2",
     "rehype-slug": "^2.0.1",
     "rss": "^1.2.2"
   }

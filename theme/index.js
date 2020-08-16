@@ -3,6 +3,7 @@ import link from './link'
 import blockquote from './quote'
 import hr from './hr'
 import strong from './strong'
+import code from './codeBlock'
 
 import Container from './container'
 import Content from './content'
@@ -17,7 +18,8 @@ export default {
     ...link,
     ...blockquote,
     ...hr,
-    ...strong
+    ...strong,
+    ...code,
   },
   Container,
   Content,
