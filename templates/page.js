@@ -6,7 +6,6 @@ import theme from '../theme'
 export default meta => ({ children }) => <MDXProvider components={theme.components}><>
   <Head>
     <title>{meta.title}</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42771171-4"></script>
   </Head>
   <theme.Container>
     <theme.components.h1>{meta.title}</theme.components.h1>
